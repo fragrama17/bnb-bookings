@@ -42,7 +42,7 @@ export class NewOfferPage implements OnInit {
         updateOn: 'blur',
         validators: [Validators.required]
       }),
-      location: new FormControl(null, { validators: [Validators.required] })
+      // location: new FormControl(null, { validators: [Validators.required] })
     });
   }
 
@@ -64,7 +64,7 @@ export class NewOfferPage implements OnInit {
           .addPlace(
             this.form.value.title,
             this.form.value.description,
-            +this.form.value.price,
+            +this.form.value.price, // string -> number, NICE !
             new Date(this.form.value.dateFrom),
             new Date(this.form.value.dateTo),
             this.form.value.location

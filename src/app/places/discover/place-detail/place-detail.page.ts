@@ -107,7 +107,7 @@ export class PlaceDetailPage implements OnInit, OnDestroy {
   }
 
   openBookingModal(mode: 'select' | 'random') {
-    console.log(mode);
+    console.log('booking date by:', mode);
     this.modalCtrl
       .create({
         component: CreateBookingComponent,

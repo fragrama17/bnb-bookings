@@ -1,11 +1,11 @@
-import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { BehaviorSubject, of } from 'rxjs';
-import { take, map, tap, delay, switchMap } from 'rxjs/operators';
+import {Injectable} from '@angular/core';
+import {HttpClient} from '@angular/common/http';
+import {BehaviorSubject, of} from 'rxjs';
+import {take, map, tap, delay, switchMap, retry} from 'rxjs/operators';
 
-import { Place } from './place.model';
-import { AuthService } from '../auth/auth.service';
-import { PlaceLocation } from './location.model';
+import {Place} from './place.model';
+import {AuthService} from '../auth/auth.service';
+import {PlaceLocation} from './location.model';
 import {environment} from '../../environments/environment';
 
 // [
@@ -59,11 +59,12 @@ interface PlaceData {
 export class PlacesService {
   private _places = new BehaviorSubject<Place[]>([]);
 
+  constructor(private authService: AuthService, private http: HttpClient) {
+  }
+
   get places() {
     return this._places.asObservable();
   }
-
-  constructor(private authService: AuthService, private http: HttpClient) {}
 
   fetchPlaces() {
     return this.http
@@ -71,25 +72,24 @@ export class PlacesService {
         environment.jsonServerUrl + '/places'
       )
       .pipe(
+        retry(3),
         map(resData => {
           console.log('fetched places', resData);
           const places = [];
           for (const index in resData) {
-            if (resData.hasOwnProperty(index)) {
-              places.push(
-                new Place(
-                  resData[index].id,
-                  resData[index].title,
-                  resData[index].description,
-                  resData[index].imageUrl,
-                  resData[index].price,
-                  new Date(resData[index].availableFrom),
-                  new Date(resData[index].availableTo),
-                  resData[index].userId,
-                  resData[index].location
-                )
-              );
-            }
+            places.push(
+              new Place(
+                resData[index].id,
+                resData[index].title,
+                resData[index].description,
+                resData[index].imageUrl,
+                resData[index].price,
+                new Date(resData[index].availableFrom),
+                new Date(resData[index].availableTo),
+                resData[index].userId,
+                resData[index].location
+              )
+            );
           }
           return places;
           // return [];
@@ -103,20 +103,20 @@ export class PlacesService {
   getPlace(id: string) {
     return this.http
       .get<PlaceData>(
-         environment.jsonServerUrl + `/places/${id}`
+        environment.jsonServerUrl + `/places/${id}`
       )
       .pipe(
         map(placeData => new Place(
-            id,
-            placeData.title,
-            placeData.description,
-            placeData.imageUrl,
-            placeData.price,
-            new Date(placeData.availableFrom),
-            new Date(placeData.availableTo),
-            placeData.userId,
-            placeData.location
-          ))
+          id,
+          placeData.title,
+          placeData.description,
+          placeData.imageUrl,
+          placeData.price,
+          new Date(placeData.availableFrom),
+          new Date(placeData.availableTo),
+          placeData.userId,
+          placeData.location
+        ))
       );
   }
 
@@ -158,13 +158,6 @@ export class PlacesService {
           this._places.next(places.concat(newPlace));
         })
       );
-    // return this.places.pipe(
-    //   take(1),
-    //   delay(1000),
-    //   tap(places => {
-    //     this._places.next(places.concat(newPlace));
-    //   })
-    // );
   }
 
   updatePlace(placeId: string, title: string, description: string) {
@@ -195,7 +188,7 @@ export class PlacesService {
         );
         return this.http.put(
           environment.jsonServerUrl + `/places/${placeId}`,
-          { ...updatedPlaces[updatedPlaceIndex]}
+          {...updatedPlaces[updatedPlaceIndex]}
         );
       }),
       tap(() => {

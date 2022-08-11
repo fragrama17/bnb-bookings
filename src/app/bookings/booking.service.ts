@@ -1,10 +1,10 @@
-import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { BehaviorSubject } from 'rxjs';
-import { take, tap, delay, switchMap, map } from 'rxjs/operators';
+import {Injectable} from '@angular/core';
+import {HttpClient} from '@angular/common/http';
+import {BehaviorSubject} from 'rxjs';
+import {take, tap, delay, switchMap, map} from 'rxjs/operators';
 
-import { Booking } from './booking.model';
-import { AuthService } from '../auth/auth.service';
+import {Booking} from './booking.model';
+import {AuthService} from '../auth/auth.service';
 import {environment} from '../../environments/environment';
 
 interface BookingData {
@@ -20,15 +20,16 @@ interface BookingData {
   userId: string;
 }
 
-@Injectable({ providedIn: 'root' })
+@Injectable({providedIn: 'root'})
 export class BookingService {
   private _bookings = new BehaviorSubject<Booking[]>([]);
+
+  constructor(private authService: AuthService, private http: HttpClient) {
+  }
 
   get bookings() {
     return this._bookings.asObservable();
   }
-
-  constructor(private authService: AuthService, private http: HttpClient) {}
 
   addBooking(
     placeId: string,
@@ -56,7 +57,7 @@ export class BookingService {
     return this.http
       .post<{ name: string }>(
         environment.jsonServerUrl + '/bookings',
-        { ...newBooking}
+        {...newBooking}
       )
       .pipe(
         switchMap(resData => {
@@ -88,33 +89,32 @@ export class BookingService {
 
   fetchBookings() {
     return this.http
-      .get<{ [key: string]: BookingData }>(
+      .get<{ bookings: BookingData[] }>(
         environment.jsonServerUrl + '/bookings'
       )
       .pipe(
         map(bookingData => {
           const bookings = [];
           for (const index in bookingData) {
-            if (bookingData.hasOwnProperty(index)) {
-              bookings.push(
-                new Booking(
-                  bookingData[index].id,
-                  bookingData[index].placeId,
-                  bookingData[index].userId,
-                  bookingData[index].placeTitle,
-                  bookingData[index].placeImage,
-                  bookingData[index].firstName,
-                  bookingData[index].lastName,
-                  bookingData[index].guestNumber,
-                  new Date(bookingData[index].bookedFrom),
-                  new Date(bookingData[index].bookedTo)
-                )
-              );
-            }
+            bookings.push(
+              new Booking(
+                bookingData[index].id,
+                bookingData[index].placeId,
+                bookingData[index].userId,
+                bookingData[index].placeTitle,
+                bookingData[index].placeImage,
+                bookingData[index].firstName,
+                bookingData[index].lastName,
+                bookingData[index].guestNumber,
+                new Date(bookingData[index].bookedFrom),
+                new Date(bookingData[index].bookedTo)
+              )
+            );
           }
           return bookings;
         }),
         tap(bookings => {
+          console.log('fetched bookings', bookings);
           this._bookings.next(bookings);
         })
       );

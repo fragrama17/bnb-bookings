@@ -141,21 +141,29 @@
         "lat": "48.6612",
         "lng": "-33.9986"
       }
+    },
+    {
+      "id": "0.19718947835299216",
+      "title": "dove",
+      "description": "come",
+      "imageUrl": "https://lonelyplanetimages.imgix.net/mastheads/GettyImages-538096543_medium.jpg?sharp=10&vib=20&w=1200",
+      "price": 10,
+      "availableFrom": "2022-08-11T16:33:00.000Z",
+      "availableTo": "2022-08-12T16:33:00.000Z",
+      "userId": "abc"
+    },
+    {
+      "id": "0.7802026465447025",
+      "title": "Quando",
+      "description": "bo",
+      "imageUrl": "https://lonelyplanetimages.imgix.net/mastheads/GettyImages-538096543_medium.jpg?sharp=10&vib=20&w=1200",
+      "price": 15,
+      "availableFrom": "2022-08-25T16:42:00.000Z",
+      "availableTo": "2022-10-28T16:42:00.000Z",
+      "userId": "abc"
     }
   ],
   "bookings": [
-    {
-      "id": "15245b7920eec81aebc9b0c0",
-      "placeId": "f66fadc564ab1659da4c3dbf",
-      "userId": "76eef6fec713421340ff9c49",
-      "placeTitle": "Newport News",
-      "placeImage": "https://media.istockphoto.com/photos/bed-and-breakfast-sign-picture-id611299750?k=20&m=611299750&s=612x612&w=0&h=I5sgohWYqg4JiAH8HC72QJ-PcCFYqbFQhXlF81hai0Y=",
-      "firstName": "Bruce",
-      "lastName": "Beatty",
-      "guestNumber": 7,
-      "bookedFrom": "2022-08-11T15:45:59.120Z",
-      "bookedTo": "2022-08-18T15:45:59.120Z"
-    },
     {
       "id": "a2c5e014cea1a4bfe0ed9f9c",
       "placeId": "d79e2b3664ea4dacc02e0fdf",
@@ -167,6 +175,54 @@
       "guestNumber": 5,
       "bookedFrom": "2022-08-11T15:45:59.120Z",
       "bookedTo": "2022-08-18T15:45:59.120Z"
+    },
+    {
+      "id": "0.8881606415971006",
+      "placeId": "abd5a6148bbcd0dcbf9a2d6e",
+      "userId": "abc",
+      "placeTitle": "South Hill",
+      "placeImage": "https://media.istockphoto.com/photos/bed-and-breakfast-sign-picture-id611299750?k=20&m=611299750&s=612x612&w=0&h=I5sgohWYqg4JiAH8HC72QJ-PcCFYqbFQhXlF81hai0Y=",
+      "firstName": "fra",
+      "lastName": "gra",
+      "guestNumber": 2,
+      "bookedFrom": "2022-08-14T16:34:00.000Z",
+      "bookedTo": "2022-08-18T16:34:00.000Z"
+    },
+    {
+      "id": "0.5783272168571307",
+      "placeId": "924e4c570eefd65b40cd68ef",
+      "userId": "abc",
+      "placeTitle": "Arlington",
+      "placeImage": "https://media.istockphoto.com/photos/bed-and-breakfast-sign-picture-id611299750?k=20&m=611299750&s=612x612&w=0&h=I5sgohWYqg4JiAH8HC72QJ-PcCFYqbFQhXlF81hai0Y=",
+      "firstName": "re",
+      "lastName": "sol",
+      "guestNumber": 2,
+      "bookedFrom": "2023-05-06T04:04:53.072Z",
+      "bookedTo": "2023-05-09T00:46:57.298Z"
+    },
+    {
+      "id": "0.7659172223773452",
+      "placeId": "326f9938edb2babcabda61b6",
+      "userId": "abc",
+      "placeTitle": "Levittown",
+      "placeImage": "https://media.istockphoto.com/photos/bed-and-breakfast-sign-picture-id611299750?k=20&m=611299750&s=612x612&w=0&h=I5sgohWYqg4JiAH8HC72QJ-PcCFYqbFQhXlF81hai0Y=",
+      "firstName": "cul",
+      "lastName": "pie",
+      "guestNumber": 2,
+      "bookedFrom": "2022-08-25T16:45:00.000Z",
+      "bookedTo": "2022-08-26T16:45:00.000Z"
+    },
+    {
+      "id": "0.18887060280103518",
+      "placeId": "5592c9b42db7b3caaaefa2bb",
+      "userId": "abc",
+      "placeTitle": "Davis",
+      "placeImage": "https://media.istockphoto.com/photos/bed-and-breakfast-sign-picture-id611299750?k=20&m=611299750&s=612x612&w=0&h=I5sgohWYqg4JiAH8HC72QJ-PcCFYqbFQhXlF81hai0Y=",
+      "firstName": "as",
+      "lastName": "sd",
+      "guestNumber": 3,
+      "bookedFrom": "2023-01-14T14:34:20.699Z",
+      "bookedTo": "2023-01-15T15:45:42.223Z"
     }
   ]
 }
