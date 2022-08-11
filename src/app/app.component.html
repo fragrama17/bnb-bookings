@@ -1,5 +1,6 @@
 <ion-app>
-  <ion-menu side="start">
+<!--  https://stackoverflow.com/questions/53003274/ionic4-component-menu-must-have-a-content-element-to-listen-for-drag-events-->
+  <ion-menu side="start" contentId="menuContent">
     <ion-header>
       <ion-toolbar>
         <ion-title>
@@ -31,5 +32,5 @@
       </ion-list>
     </ion-content>
   </ion-menu>
-  <ion-router-outlet main></ion-router-outlet>
+  <ion-router-outlet id="menuContent"></ion-router-outlet>
 </ion-app>

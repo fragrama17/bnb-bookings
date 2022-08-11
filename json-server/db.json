@@ -1,0 +1,172 @@
+{
+  "places": [
+    {
+      "id": "1dcc4ccbfff01ad0df4f991c",
+      "title": "Norfolk",
+      "description": "best in da forest",
+      "imageUrl": "https://media.istockphoto.com/photos/bed-and-breakfast-sign-picture-id611299750?k=20&m=611299750&s=612x612&w=0&h=I5sgohWYqg4JiAH8HC72QJ-PcCFYqbFQhXlF81hai0Y=",
+      "price": 96,
+      "availableFrom": "2022-08-11T15:45:59.118Z",
+      "availableTo": "2023-08-11T15:45:59.118Z",
+      "userId": "0b2a55aeb5cfd328be1911f9",
+      "location": {
+        "address": "36648 Katelyn Mountains Suite 857",
+        "lat": "67.1615",
+        "lng": "57.2561"
+      }
+    },
+    {
+      "id": "5592c9b42db7b3caaaefa2bb",
+      "title": "Davis",
+      "description": "Dosio eeeeeeeeiuu",
+      "imageUrl": "https://media.istockphoto.com/photos/bed-and-breakfast-sign-picture-id611299750?k=20&m=611299750&s=612x612&w=0&h=I5sgohWYqg4JiAH8HC72QJ-PcCFYqbFQhXlF81hai0Y=",
+      "price": 27,
+      "availableFrom": "2022-08-11T15:45:59.119Z",
+      "availableTo": "2023-08-11T15:45:59.119Z",
+      "userId": "fdf1e60426eadd554de8f138",
+      "location": {
+        "address": "979 Eduardo Streets Apt. 347",
+        "lat": "-2.3900",
+        "lng": "-83.9720"
+      }
+    },
+    {
+      "id": "58be23fa3da9e4bdcfc87fb2",
+      "title": "Bloomington",
+      "price": 137,
+      "imageUrl": "https://media.istockphoto.com/photos/bed-and-breakfast-sign-picture-id611299750?k=20&m=611299750&s=612x612&w=0&h=I5sgohWYqg4JiAH8HC72QJ-PcCFYqbFQhXlF81hai0Y=",
+      "availableFrom": "2022-08-11T15:45:59.119Z",
+      "availableTo": "2023-08-11T15:45:59.119Z",
+      "userId": "bf08b5c8b9219d8daeabee61",
+      "location": {
+        "address": "75285 O'Connell Ville Suite 369",
+        "lat": "-16.4493",
+        "lng": "-120.8614"
+      }
+    },
+    {
+      "id": "abd5a6148bbcd0dcbf9a2d6e",
+      "title": "South Hill",
+      "price": 243,
+      "imageUrl": "https://media.istockphoto.com/photos/bed-and-breakfast-sign-picture-id611299750?k=20&m=611299750&s=612x612&w=0&h=I5sgohWYqg4JiAH8HC72QJ-PcCFYqbFQhXlF81hai0Y=",
+      "availableFrom": "2022-08-11T15:45:59.119Z",
+      "availableTo": "2023-08-11T15:45:59.119Z",
+      "userId": "dccfffecf2b5cb4eabdfc2b0",
+      "location": {
+        "address": "2376 Hahn Station Suite 016",
+        "lat": "82.0040",
+        "lng": "-109.4080"
+      }
+    },
+    {
+      "id": "f8f677f8cdaa3ae3c2b78e0a",
+      "title": "Parker",
+      "price": 48,
+      "imageUrl": "https://media.istockphoto.com/photos/bed-and-breakfast-sign-picture-id611299750?k=20&m=611299750&s=612x612&w=0&h=I5sgohWYqg4JiAH8HC72QJ-PcCFYqbFQhXlF81hai0Y=",
+      "availableFrom": "2022-08-11T15:45:59.119Z",
+      "availableTo": "2023-08-11T15:45:59.119Z",
+      "userId": "1daf6cdecf3b7b5d7dd0ed07",
+      "location": {
+        "address": "7687 Giles Neck Suite 234",
+        "lat": "44.9770",
+        "lng": "-82.4282"
+      }
+    },
+    {
+      "id": "924e4c570eefd65b40cd68ef",
+      "title": "Arlington",
+      "price": 119,
+      "imageUrl": "https://media.istockphoto.com/photos/bed-and-breakfast-sign-picture-id611299750?k=20&m=611299750&s=612x612&w=0&h=I5sgohWYqg4JiAH8HC72QJ-PcCFYqbFQhXlF81hai0Y=",
+      "availableFrom": "2022-08-11T15:45:59.120Z",
+      "availableTo": "2023-08-11T15:45:59.120Z",
+      "userId": "dcc9dc97aa5ede6db8d20c83",
+      "location": {
+        "address": "21179 Taurean Skyway Apt. 147",
+        "lat": "-7.8849",
+        "lng": "-13.3601"
+      }
+    },
+    {
+      "id": "f66fadc564ab1659da4c3dbf",
+      "title": "Newport News",
+      "price": 289,
+      "imageUrl": "https://media.istockphoto.com/photos/bed-and-breakfast-sign-picture-id611299750?k=20&m=611299750&s=612x612&w=0&h=I5sgohWYqg4JiAH8HC72QJ-PcCFYqbFQhXlF81hai0Y=",
+      "availableFrom": "2022-08-11T15:45:59.120Z",
+      "availableTo": "2023-08-11T15:45:59.120Z",
+      "userId": "7adb74b37dd32336eada3488",
+      "location": {
+        "address": "151 Aylin Plain Suite 115",
+        "lat": "49.0312",
+        "lng": "-68.9193"
+      }
+    },
+    {
+      "id": "c1fbc591a6ebcd38eef3d5c6",
+      "title": "Chesterfield",
+      "price": 88,
+      "imageUrl": "https://media.istockphoto.com/photos/bed-and-breakfast-sign-picture-id611299750?k=20&m=611299750&s=612x612&w=0&h=I5sgohWYqg4JiAH8HC72QJ-PcCFYqbFQhXlF81hai0Y=",
+      "availableFrom": "2022-08-11T15:45:59.120Z",
+      "availableTo": "2023-08-11T15:45:59.120Z",
+      "userId": "91e6e7171c82fdaedfb12141",
+      "location": {
+        "address": "9338 Steuber Ferry Suite 307",
+        "lat": "29.6737",
+        "lng": "35.8407"
+      }
+    },
+    {
+      "id": "326f9938edb2babcabda61b6",
+      "title": "Levittown",
+      "price": 297,
+      "imageUrl": "https://media.istockphoto.com/photos/bed-and-breakfast-sign-picture-id611299750?k=20&m=611299750&s=612x612&w=0&h=I5sgohWYqg4JiAH8HC72QJ-PcCFYqbFQhXlF81hai0Y=",
+      "availableFrom": "2022-08-11T15:45:59.120Z",
+      "availableTo": "2023-08-11T15:45:59.120Z",
+      "userId": "07ac2bdafebfd63f4a386db6",
+      "location": {
+        "address": "106 Keyon Lodge Suite 712",
+        "lat": "75.1089",
+        "lng": "-60.6255"
+      }
+    },
+    {
+      "id": "d79e2b3664ea4dacc02e0fdf",
+      "title": "Alafaya",
+      "price": 180,
+      "imageUrl": "https://media.istockphoto.com/photos/bed-and-breakfast-sign-picture-id611299750?k=20&m=611299750&s=612x612&w=0&h=I5sgohWYqg4JiAH8HC72QJ-PcCFYqbFQhXlF81hai0Y=",
+      "availableFrom": "2022-08-11T15:45:59.120Z",
+      "availableTo": "2023-08-11T15:45:59.120Z",
+      "userId": "ecbd0acae28ee3bd0374979e",
+      "location": {
+        "address": "432 Hackett Loop Suite 120",
+        "lat": "48.6612",
+        "lng": "-33.9986"
+      }
+    }
+  ],
+  "bookings": [
+    {
+      "id": "15245b7920eec81aebc9b0c0",
+      "placeId": "f66fadc564ab1659da4c3dbf",
+      "userId": "76eef6fec713421340ff9c49",
+      "placeTitle": "Newport News",
+      "placeImage": "https://media.istockphoto.com/photos/bed-and-breakfast-sign-picture-id611299750?k=20&m=611299750&s=612x612&w=0&h=I5sgohWYqg4JiAH8HC72QJ-PcCFYqbFQhXlF81hai0Y=",
+      "firstName": "Bruce",
+      "lastName": "Beatty",
+      "guestNumber": 7,
+      "bookedFrom": "2022-08-11T15:45:59.120Z",
+      "bookedTo": "2022-08-18T15:45:59.120Z"
+    },
+    {
+      "id": "a2c5e014cea1a4bfe0ed9f9c",
+      "placeId": "d79e2b3664ea4dacc02e0fdf",
+      "userId": "8cf6ad51d7ba2db469e14bf7",
+      "placeTitle": "Alafaya",
+      "placeImage": "https://media.istockphoto.com/photos/bed-and-breakfast-sign-picture-id611299750?k=20&m=611299750&s=612x612&w=0&h=I5sgohWYqg4JiAH8HC72QJ-PcCFYqbFQhXlF81hai0Y=",
+      "firstName": "Alonzo",
+      "lastName": "Greenholt",
+      "guestNumber": 5,
+      "bookedFrom": "2022-08-11T15:45:59.120Z",
+      "bookedTo": "2022-08-18T15:45:59.120Z"
+    }
+  ]
+}
